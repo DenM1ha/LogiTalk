@@ -222,6 +222,7 @@ class MainWindow(CTk):
         file_name = filedialog.askopenfilename()
         if not file_name:
             return
+            
         try:
             with open(file_name, "rb") as f:
                 raw = f.read()
@@ -248,3 +249,4 @@ class MainWindow(CTk):
 if __name__ == "__main__":
     win = MainWindow()
     win.mainloop()
+
